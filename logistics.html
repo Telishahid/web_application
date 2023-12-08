@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Logistics</title>
+    <style>
+        /* Hide the form initially */
+        #basic {
+            display: show;
+        }
+        .circle {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    left: 103px;
+    top: 70px;
+    border-radius: 50%;
+    background: #DFDFDF;
+    border: 3px solid #000000;
+}
+.circle1 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    left: 464px;
+    top: 73px;
+    border-radius: 50%;
+    background:  #DFDFDF;
+    border: 3px solid #000000;
+}
+.circle2 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    left: 791px;
+    top: 72px;
+    border-radius: 50%;
+    border: 3px solid #3178A0;
+}
+   
+.circle3 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    left: 1143px;
+    top: 70px;
+    border-radius: 50%;
+    background: #DFDFDF;
+    border: 3px solid #000000;
+}
+
+.number {
+    position: absolute;
+    width: 80px;
+    height: 75px;
+    left: 40px;
+    top: 16px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.number1{
+    position: absolute;
+    width: 80px;
+    height: 75px;
+    left: 41px;
+    top: 14px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
+    
+}
+
+.number2{
+    position: absolute;
+    width: 80px;
+    height: 75px;
+    left: 40px;
+    top: 15px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+       
+    color: #3178A0;
+    
+}
+
+.number3{
+    position: absolute;
+    width: 80px;
+    height: 75px;
+    left: 41px;
+    top: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    
+
+}
+
+.custom-line {
+    position: absolute;
+    width: 247px;
+    height: 0px;
+    left: 900px;
+    top: 76px;
+    border: 3px solid #3178A0;}
+.custom-line1 {
+
+    position: absolute;
+    width: 214px;
+    height: 0px;
+    left: 573px;
+    top: 117px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4C4C4;
+    border: 3px solid #3178A0;
+    transform: rotate(0.03deg);
+}
+
+.custom-line2 {
+    position: absolute;
+    width: 248px;
+    height: 0px;
+    left: 212px;
+    top: 117px;
+    border: 3px solid #000000;
+}
+
+
+
+.below-text {
+    position: absolute;
+    width: 188px;
+    height: 33px;
+    left: -43px;
+    top: 111px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color:#000000
+}
+.below-text1 {
+    position: absolute;
+    width: 188px;
+    height: 33px;
+    left: -43px;
+    top: 111px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    
+color: #000000;
+}
+
+.below-text2 {
+    position: absolute;
+    width: 188px;
+    height: 33px;
+    left: -43px;
+    top: 111px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #3178A0;
+}
+
+.below-text3 {
+    position: absolute;
+    width: 188px;
+    height: 33px;
+    left: -43px;
+    top: 111px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+color: #000000;
+}
+
+.below-text4 {
+    position: absolute;
+    width: 188px;
+    height: 33px;
+    left: -43px;
+    top: 111px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+color:#000000
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="circle-container">
+        <div  id=""class="circle">
+            <span id="intialInformation" class="number">1</span>
+            <span class="below-text">Initial Information</span>
+        <hr  class="custom-line">
+        </div>
+        <div >
+            <div  id="PartyInformation"  class="circle1">
+            <span class="number1">2</span>
+            <span  class="below-text1">Party Information</span>
+        </div>
+        <hr class="custom-line1">
+        <div id="logistics" class="circle2">
+            <span class="number2">3</span>
+            <span class="below-text2">Logistics</span>
+        </div>
+        <hr class="custom-line2">
+        <div id="AddtionalService" class="circle3">
+            <span class="number3">4</span>
+            <span class="below-text3">Additional Service</span>
+        </div>
+    </div>
+</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="das">
+    <select class="BasicLogistics" id="BasicLogistics"></select>
+    <span class="font">Basic Logistics</span>
+    </div>
+
+        <form id="basic" action="#" method="post" class="BasicLogistics">
+            <br>
+            <br>
+            <span class="Email">Upload Cover page (optional)</span><br>
+            <p class="file0" for="fileUpload">Choose file here </p>
+            <p class="file"> 
+    
+            <!-- The 'accept' attribute specifies the file types that the user can pick from the file input dialog. -->
+<div class="container">
+<div class="input-contain">
+            <label for="causeStyle">Cause Style:</label>
+            <input type="text" id="causeStyle" name="causeStyle" required placeholder="Type here">
+
+            <label for="fileName">Start time</label>
+            <input type="time" id="fileName" name="fileName" required placeholder="">
+
+            <label for="data">Arbitrator(s)</label>
+            <input id="text" name="data" rows="4" required placeholder="Chair's name"></input>
+
+            <br>     
+
+            <label for="startTime"> </label>
+            <input type="text" id="startTime" name="startTime" required placeholder="Add additional arbitrator">
+            
+            <br>
+            <br>
+
+            <span>Tribual Secretary</span>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round">
+                    <span class="label">Yes</span>
+                    <span class="label">No</span>
+                </span>
+            </label>  
+
+            <label for="endTime"></label>
+            <input type="text" id="endTime" name="endTime" required placeholder="Tribunal secretary's name">
+
+            <label for="endTime"> Witness(es)</label>
+            <input type="text" id="endTime" name="endTime" required placeholder="Witness' name">
+
+            <br>     
+
+            <label for="startTime"> </label>
+            <input type="text" id="startTime" name="startTime" required placeholder="Add additional arbitrator">
+
+        </div>
+        <div class="input-contain">
+            <label for="email2">Court File #</label>
+            <input type="email" id="email2" name="email2" required placeholder="Type here">
+
+            <label for="fileName"></label>
+            <input type="time" id="fileName" name="fileName" required placeholder="">
+
+            <br>
+            <br>
+
+            <label for="email4"></label>
+            <input type="email" id="email4" name="email4" required placeholder="Email">
+
+            <label for="email5"></label>
+            <input type="email" id="email5" name="email5" required>
+            <br>
+            <br>
+            <br>
+            <br>
+            <label for="email6"></label>
+            <input type="email" id="email6" name="email6" required>
+
+            <label for="email7"></label>
+            <input type="email" id="email7" name="email7" required placeholder="Email
+            ">
+
+            <label for="email7"></label>
+            <input type="email" id="email7" name="email7" required>
+            <br>
+            <br>
+            <br>
+</div>
+<div class="input-contain">
+            <br>
+            <label for="email8">Booking Dates</label>
+            <input type="date" id="email8" name="email8" required>
+
+            <label for="email9">Time Zone</label>
+            <input type="email" id="email9" name="email9" required>
+        </div>
+
+        </form>
+</div>
+        <!-- Virtual logistics -->
+        <div class="das">
+            <select class="BasicLogistics" id="VirtualLogistics"></select>
+            <span class="font8">Virtual Logistics </span>
+            </div>
+            <div>
+                <form id="Virtual" action="#" method="post" class="BasicLogistics">
+                    <br>
+        <div class="input-contain">
+                    <span>Do you require a VCM (virtual case manager)</span>
+                    <label class="switch0">
+                        <input type="checkbox" checked>
+                        <span class="slider round">
+                            <span class="label">Yes</span>
+                            <span class="label">No</span>
+                        </span>
+                    </label>
+                    <br>
+                    <br>
+                    <br>
+                    <label for="vcmName">Is there a particular VCM you want to work with?</label>
+                    <input type="text" id="vcmName" name="vcmName" required placeholder="VCM's name">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <label for="virtualPlatform">Select a virtual platform:</label>
+                    <select id="virtualPlatform" name="virtualPlatform" required>
+                        <option value="zoom">Zoom</option>
+                        <option value="googleMeet">Google Meet</option>
+                    </select>
+
+                    <label for="breakoutRooms">Number of virtual breakout rooms:</label>
+                    <input type="number" id="breakoutRooms" name="breakoutRooms" required>
+                    <br>
+                    <br>
+                    <span>Do you need us to provide Document Managing Service</span>
+                    <label class="switch0">
+                        <input type="checkbox" checked>
+                        <span class="slider round">
+                            <span class="label">Yes</span>
+                            <span class="label">No</span>
+                        </span>
+                    </label>
+
+                    <br>
+                    <br>
+                </div>
+                <div class="input-contain">
+                    <label for="specialAccommodations">Do you have any special accommodations for your booking that<br> our
+                        I.T. team can look into prior to the start date</label>
+                    <input type="text" id="specialAccommodations" name="specialAccommodations" required placeholder="Input">
+                    <br>
+                    <br>
+                    <span>Would you like the matter to be recorded?</span>
+                    <label class="switch0">
+                        <input type="checkbox" checked>
+                        <span class="slider round">
+                            <span class="label">Yes</span>
+                            <span class="label">No</span>
+                        </span>
+                    </label>
+                </form>
+            </div>
+            </div>
+        </div>
+
+        <script>
+  
+ 
+            </script>
+        <script src="script.js"></script>
+</body>
+
+</html>

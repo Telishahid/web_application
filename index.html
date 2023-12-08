@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Party Information </title>
+    <style>
+        /* Hide the form initially */
+        #billingForm {
+            display: show;
+        }
+
+        #oppsitefrom {
+            display: show;
+        }
+
+        #Additional {
+            display: none;
+        }
+.circle {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    left: 103px;
+    top: 70px;
+    border-radius: 50%;
+    background: #DFDFDF;
+    border: 3px solid #000000;
+}
+.circle1 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    left: 464px;
+    top: 73px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 3px solid #3178A0;
+}
+.circle2 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    left: 791px;
+    top: 72px;
+    border-radius: 50%;
+    background: #DFDFDF;
+    border: 3px solid #000000;
+}
+   
+.circle3 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    left: 1143px;
+    top: 70px;
+    border-radius: 50%;
+    background: #DFDFDF;
+    border: 3px solid #000000;
+}
+
+
+.number {
+    position: absolute;
+    width: 80px;
+    height: 75px;
+    left: 40px;
+    top: 16px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.number1{
+    position: absolute;
+    width: 80px;
+    height: 75px;
+    left: 41px;
+    top: 14px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #3178A0;
+    
+}
+
+.number2{
+    position: absolute;
+    width: 80px;
+    height: 75px;
+    left: 40px;
+    top: 15px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    
+}
+
+.number3{
+    position: absolute;
+    width: 80px;
+    height: 75px;
+    left: 41px;
+    top: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    
+
+}
+
+.custom-line {
+    position: absolute;
+    width: 247px;
+    height: 0px;
+    left: 900px;
+    top: 76px;
+    border: 3px solid #000000;}
+.custom-line1 {
+
+    position: absolute;
+    width: 217px;
+    height: 0px;
+    left: 573px;
+    top: 117px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4C4C4;
+    border: 3px solid #3178A0;
+    transform: rotate(0.03deg);
+}
+
+.custom-line2 {
+    position: absolute;
+    width: 248px;
+    height: 0px;
+    left: 212px;
+    top: 117px;
+    border: 3px solid #3178A0;
+}
+
+
+.below-text {
+    position: absolute;
+    width: 188px;
+    height: 33px;
+    left: -43px;
+    top: 111px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color:#000000
+}
+.below-text1 {
+    position: absolute;
+    width: 188px;
+    height: 33px;
+    left: -43px;
+    top: 111px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    
+color: #3178A0;
+}
+
+.below-text2 {
+    position: absolute;
+    width: 188px;
+    height: 33px;
+    left: -43px;
+    top: 111px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #000000;
+}
+
+.below-text3 {
+    position: absolute;
+    width: 188px;
+    height: 33px;
+    left: -43px;
+    top: 111px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+color: #000000;
+}
+
+.below-text4 {
+    position: absolute;
+    width: 188px;
+    height: 33px;
+    left: -43px;
+    top: 111px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+color:#000000
+}
+
+   
+    </style>
+</head>
+
+<body>
+    <div class="circle-container">
+        <div  id=""class="circle">
+            <span id="intialInformation" class="number">1</span>
+            <span class="below-text">Initial Information</span>
+        <hr  class="custom-line">
+        </div>
+        <div  >
+            <div id="PartyInformation"  class="circle1">
+            <span class="number1">2</span>
+            <span  class="below-text1">Party Information</span>
+        </div>
+        <hr class="custom-line1">
+        <div id="logistics" class="circle2">
+            <span class="number2">3</span>
+            <span class="below-text2">Logistics</span>
+        </div>
+        <hr class="custom-line2">
+        <div id="AddtionalService" class="circle3">
+            <span class="number3">4</span>
+            <span class="below-text3">Additional Service</span>
+        </div>
+    </div>
+</div>
+
+</div>
+    <br>
+    <br>
+      <br>
+      <br>
+      <br>
+    <div class="das5">
+    <select id="showFormButton"></select>
+    <span class="font7">Billing Information Form</span>
+        <span class="spam">(Enter as much as Possible)</span>
+    </div>
+        <form id="billingForm" action="#" method="post" class="billingForm">
+      
+            <span class="text" >Use Information on Account?</span>
+            <div class="slider-container">
+                <label class="switch1">
+                    <input type="checkbox">
+                    <span class="slider round">
+                        <span class="label">Yes</span>
+                        <span class="label">No</span>
+                    </span>
+                </label>
+        </div>
+
+
+ <div class="input-contain">
+
+                    <label class="firmNameLabel">Firm Name:</label>
+                    <input class="firmNameInput" id="firmName" name="Input" placeholder="Input"></input>
+
+                    <!-- Booking Contact Name -->
+                    <label class="contactNameLabel" for="contactName">Billing Address </label>
+                    <input class="contactNameInput" id="contactName" name="contactName" placeholder="Type here"></input>
+
+                    <!-- Phone Number -->
+                    <label class="phoneNameLabel" for="phoneNumber">Role</label>
+                    <input class="phoneNameInput" id="phoneNumber" name="phoneNumber" placeholder="Input"></input>
+                
+                    <!-- Billing Address -->
+                    <label class="billingAddressLabel" for="billingAddress">Lead ounsel(s) information</label>
+                    <input class="billingAddressInput" id="billingAddress" name="billingAddress" placeholder="Name"></input>
+
+                    <!-- Zip/Postal Code -->
+                    <label class="postalCodeLabel" for="postalCode"></label>
+                    <input class="postalCodeInput" type="text" id="postalCode" name="postalCode" placeholder="Input">
+                </div>
+                <div class="input-contain">
+                    <!-- Country/City -->
+                    <label class="countryLabel" for="country">Booking Contact Name</label>
+                    <input class="countryInput" type="text" id="country" name="country" placeholder="Canada">
+                
+                    <!-- Role -->
+                    <label class="roleLabel" for="role">Zip/Postal Code</label>
+                    <input class="roleInput" type="text" id="role" name="role" placeholder="Input">
+                
+                    <!-- Name of Represented Client -->
+                    <label class="clientNameLabel" for="clientName">Name of Represented Client</label>
+                    <input class="clientNameInput" type="text" id="clientName" name="clientName" required>
+             
+                    <!-- Lead Counsel Information -->
+                    <label class="leadCounselLabel" for="leadCounsel"></label>
+                    <input class="leadCounselInput" id="leadCounsel" name="leadCounsel" placeholder="Email"></input>
+         
+                    <!-- Email -->
+                    <label class="emailLabel" for="email"></label>
+                    <input class="emailInput" type="email" id="email" name="email" placeholder="Email">
+                </div>
+                <div class="input-contain0">
+          <!-- Name of Represented Client -->
+          <label class="clientNameLabel" for="clientName"> Phone Number (no spaces)</label>
+          <input class="clientNameInput" type="text" id="clientName" name="clientName" required placeholder="Type here">
+   
+          <!-- Lead Counsel Information -->
+          <label class="leadCounselLabel" for="leadCounsel">Country/City</label>
+          <input class="leadCounselInput" id="leadCounsel" name="leadCounsel" placeholder="Canada"></input>
+
+                    </div>
+                    </div>
+                    
+                    </div>
+            </form>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="das1">  
+    <select id="OpposingPartyInfo"> </select>
+    <span class="font4">Opposing Party Information</span>
+    </div>
+<div>
+    <form id="oppsitefrom" action="#" method="post" class="billingForm">
+        <!-- Firm Name -->
+
+        <div class="input-contain">
+
+            <label class="firmNameLabel">Firm Name:</label>
+            <input class="firmNameInput" id="firmName" name="Input" placeholder="Input"></input>
+
+            <!-- Booking Contact Name -->
+            <label class="contactNameLabel" for="contactName">Booking Contact Name:</label>
+            <input class="contactNameInput" id="contactName" name="contactName" placeholder="Type here"></input>
+
+            <!-- Phone Number -->
+            <label class="phoneNameLabel" for="phoneNumber">Phone Number (No spaces)</label>
+            <input class="phoneNameInput" id="phoneNumber" name="phoneNumber" placeholder="Type here"></input>
+        
+            <!-- Billing Address -->
+            <label class="billingAddressLabel" for="billingAddress">Billing Address</label>
+            <input class="billingAddressInput" id="billingAddress" name="billingAddress" placeholder="Type here"></input>
+
+            <!-- Zip/Postal Code -->
+            <label class="postalCodeLabel" for="postalCode">Zip/Postal Code:</label>
+            <input class="postalCodeInput" type="text" id="postalCode" name="postalCode" placeholder="Input">
+        </div>
+        <div class="input-contain">
+            <!-- Country/City -->
+            <label class="countryLabel" for="country">Country/City</label>
+            <input class="countryInput" type="text" id="country" name="country" placeholder="Canada">
+        
+            <!-- Role -->
+            <label class="roleLabel" for="role">Role</label>
+            <input class="roleInput" type="text" id="role" name="role" placeholder="Input">
+        
+            <!-- Name of Represented Client -->
+            <label class="clientNameLabel" for="clientName">Name of Represented Client</label>
+            <input class="clientNameInput" type="text" id="clientName" name="clientName" required>
+     
+            <!-- Lead Counsel Information -->
+            <label class="leadCounselLabel" for="leadCounsel">Lead Counsel(s) Information</label>
+            <input class="leadCounselInput" id="leadCounsel" name="leadCounsel" placeholder="Name"></input>
+ 
+            <!-- Email -->
+            <label class="emailLabel" for="email">Email</label>
+            <input class="emailInput" type="email" id="email" name="email" placeholder="Email">
+        </div>
+        <div class="input-contain0">
+  <!-- Name of Represented Client -->
+  <label class="clientNameLabel" for="clientName">Name of Represented Client</label>
+  <input class="clientNameInput" type="text" id="clientName" name="clientName" required>
+
+  <!-- Lead Counsel Information -->
+  <label class="leadCounselLabel" for="leadCounsel">Lead Counsel(s) Information</label>
+  <input class="leadCounselInput" id="leadCounsel" name="leadCounsel" placeholder="Name"></input>
+
+            </div>
+            </div>
+            
+            </div>
+    </form>
+</div>
+</div>
+    <br>
+    <br>
+    <div class="das">
+    <span id="Additionalinfo" class="font1"></span>
+    </div>
+<div>
+<div class="container1"> <form id="Additional" action="#" method="post" class="billingForm">
+        <!-- Firm Name -->
+ 
+        <div class="input-contain">
+
+            <label class="firmNameLabel">Firm Name:</label>
+            <input class="firmNameInput" id="firmName" name="Input" placeholder="Input"></input>
+
+            <!-- Booking Contact Name -->
+            <label class="contactNameLabel" for="contactName">Booking Contact Name:</label>
+            <input class="contactNameInput" id="contactName" name="contactName" placeholder="Type here"></input>
+
+            <!-- Phone Number -->
+            <label class="phoneNameLabel" for="phoneNumber">Phone Number (No spaces)</label>
+            <input class="phoneNameInput" id="phoneNumber" name="phoneNumber" placeholder="Type here"></input>
+        
+            <!-- Billing Address -->
+            <label class="billingAddressLabel" for="billingAddress">Billing Address</label>
+            <input class="billingAddressInput" id="billingAddress" name="billingAddress" placeholder="Type here"></input>
+
+            <!-- Zip/Postal Code -->
+            <label class="postalCodeLabel" for="postalCode">Zip/Postal Code:</label>
+            <input class="postalCodeInput" type="text" id="postalCode" name="postalCode" placeholder="Input">
+        </div>
+        <div class="input-contain">
+            <!-- Country/City -->
+            <label class="countryLabel" for="country">Country/City</label>
+            <input class="countryInput" type="text" id="country" name="country" placeholder="Canada">
+        
+            <!-- Role -->
+            <label class="roleLabel" for="role">Role</label>
+            <input class="roleInput" type="text" id="role" name="role" placeholder="Input">
+        
+            <!-- Name of Represented Client -->
+            <label class="clientNameLabel" for="clientName">Name of Represented Client</label>
+            <input class="clientNameInput" type="text" id="clientName" name="clientName" required>
+     
+            <!-- Lead Counsel Information -->
+            <label class="leadCounselLabel" for="leadCounsel">Lead Counsel(s) Information</label>
+            <input class="leadCounselInput" id="leadCounsel" name="leadCounsel" placeholder="Name"></input>
+ 
+            <!-- Email -->
+            <label class="emailLabel" for="email">Email</label>
+            <input class="emailInput" type="email" id="email" name="email" placeholder="Email">
+        </div>
+        <div class="input-contain0">
+  <!-- Name of Represented Client -->
+  <label class="clientNameLabel" for="clientName">Name of Represented Client</label>
+  <input class="clientNameInput" type="text" id="clientName" name="clientName" required>
+
+  <!-- Lead Counsel Information -->
+  <label class="leadCounselLabel" for="leadCounsel">Lead Counsel(s) Information</label>
+  <input class="leadCounselInput" id="leadCounsel" name="leadCounsel" placeholder="Name"></input>
+
+            </div>
+            </div>
+            
+            </div>
+    </form>
+</div>
+</div>
+    <br>
+    <br>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>

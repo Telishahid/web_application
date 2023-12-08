@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>AdditionalService</title>
+    <style>
+        /* Hide the form initially */
+        #court {
+            display: show;
+        }
+
+        #CourtRepo {
+            display: show;
+        }
+        .circle {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    left: 103px;
+    top: 70px;
+    border-radius: 50%;
+    background: #DFDFDF;
+    border: 3px solid #000000;
+}
+.circle1 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    left: 464px;
+    top: 73px;
+    border-radius: 50%;
+    background:  #DFDFDF;
+    border: 3px solid #000000;
+}
+.circle2 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    left: 791px;
+    top: 72px;
+    border-radius: 50%;
+    background: #DFDFDF;
+    border: 3px solid #000000;
+}
+   
+.circle3 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    left: 1151px;
+    top: 70px;
+    border-radius: 50%;
+    border: 3px solid  #3178A0;
+}
+
+
+.number {
+    position: absolute;
+    width: 80px;
+    height: 75px;
+    left: 40px;
+    top: 16px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.number1{
+    position: absolute;
+    width: 80px;
+    height: 75px;
+    left: 41px;
+    top: 14px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #000000;
+    
+}
+
+.number2{
+    position: absolute;
+    width: 80px;
+    height: 75px;
+    left: 40px;
+    top: 15px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    
+}
+
+.number3{
+    position: absolute;
+    width: 80px;
+    height: 75px;
+    left: 41px;
+    top: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #3178A0;
+    
+
+}
+
+.custom-line {
+    position: absolute;
+    width: 247px;
+    height: 0px;
+    left: 900px;
+    top: 76px;
+    border: 3px solid #3178A0;}
+.custom-line1 {
+
+    position: absolute;
+    width: 217px;
+    height: 0px;
+    left: 573px;
+    top: 117px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4C4C4;
+    border: 3px solid #000000;
+    transform: rotate(0.03deg);
+}
+
+.custom-line2 {
+    position: absolute;
+    width: 248px;
+    height: 0px;
+    left: 212px;
+    top: 117px;
+    border: 3px solid #000000;
+}
+
+
+.below-text {
+    position: absolute;
+    width: 188px;
+    height: 33px;
+    left: -43px;
+    top: 111px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color:#000000
+}
+.below-text1 {
+    position: absolute;
+    width: 188px;
+    height: 33px;
+    left: -43px;
+    top: 111px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #000000
+}
+
+.below-text2 {
+    position: absolute;
+    width: 188px;
+    height: 33px;
+    left: -43px;
+    top: 111px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+color: #000000;
+}
+
+.below-text3 {
+    position: absolute;
+    width: 188px;
+    height: 33px;
+    left: -43px;
+    top: 111px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+color: #3178A0;
+}
+
+
+   
+    </style>
+</head>
+
+<body>
+    <div class="circle-container">
+        <div  id=""class="circle">
+            <span id="intialInformation" class="number">1</span>
+            <span class="below-text">Initial Information</span>
+        <hr  class="custom-line">
+        </div>
+        <div  >
+            <div id="PartyInformation"  class="circle1">
+            <span class="number1">2</span>
+            <span  class="below-text1">Party Information</span>
+        </div>
+        <hr class="custom-line1">
+        <div id="logistics" class="circle2">
+            <span class="number2">3</span>
+            <span class="below-text2">Logistics</span>
+        </div>
+        <hr class="custom-line2">
+        <div id="AddtionalService" class="circle3">
+            <span class="number3">4</span>
+            <span class="below-text3">Additional Service</span>
+        </div>
+    </div>
+</div>
+  <br>
+  <br>
+    <br>
+    <br>
+    <br>
+<div class="das3">
+    <select class="billingForm" id="CourtReporting"></select>
+    <span class="font5">Court Reporting</span>
+</div>
+    <br>
+ <div class="input-contain">   
+    <form id="court" action="#" method="post" class="billingForm">
+        <p class="font3">Will this matter plan to have a Court Reporter?</p>
+        <label class="switch0">
+            <input type="checkbox" checked>
+            <span class="slider round">
+                <span class="label">Yes</span>
+                <span class="label">No</span>
+            </span>
+        </label>
+        <br>
+        <br>
+        <p class="font3">Would you like an Arbitration Place Court Reporter?</p>
+        <label class="switch0">
+            <input type="checkbox" checked>
+            <span class="slider round">
+                <span class="label">Yes</span>
+                <span class="label">No</span>
+            </span>
+        </label>
+        <br>
+        <br>
+        <label for="additionalRequests" class="input">Is there a specific Arbitration Place Court Reporter 
+            you prefer? </label>
+        <input type="text" id="additionalRequests" placeholder="Select AP Court Reporter">
+        <br>
+        <br>
+        <p class="font3">Will a transcript be required?</p>
+        <label class="switch0">
+            <input type="checkbox" checked>
+            <span class="slider round">
+                <span class="label">Yes</span>
+                <span class="label">No</span>
+            </span>
+        </label>
+        <br>
+        <br>
+        <label for="additionalRequests" class="input"> Turnaround time?</label>
+        <input type="text" id="additionalRequests" placeholder="Standard"> </input>
+        <br>
+        <br>
+        <p class="font3">Multilingual?</p>
+        <label class="switch0">
+            <input type="checkbox" checked>
+            <span class="slider round">
+                <span class="label">Yes</span>
+                <span class="label">No</span>
+            </span>
+        </label>
+        <br>
+        <label for="additionalRequests" class="input">Please list the non-english languages you would
+            like accommodated (separate by comma) </label>
+        <input type="text" id="additionalRequests" placeholder="Input"> </input>
+        <br>
+        <br>
+        <label for="additionalRequests" class="input">Daily Rough Draft?</label>
+        <input type="text" id="additionalRequests" placeholder="I don't know"> </input>
+
+        <br>
+        <br>
+        <label for="additionalRequests" class="input"> Realtime reporting?</label>
+        <input type="text" id="additionalRequests" placeholder="I don't know"> </input>
+    
+        </div>
+   <div class="das4">
+    <select class="billingForm" id="CourtRep"></select>
+    <span class="font6">Additional Features</span>
+</div>
+<div class="input-contain">
+    <br>
+    <br>
+    <form id="CourtRepo" action="#" method="post" class="billingForm">
+        <!-- Firm Name -->
+        <p class="font3">Do you require interpretation?</p>
+        <label class="switch0">
+            <input type="checkbox" checked>
+            <span class="slider round">
+                <span class="label">Yes</span>
+                <span class="label">No</span>
+            </span>
+        </label>
+        <br>
+        <br>
+        <label for="additionalRequests" class="input">Please list all languages to be interpreted 
+            (separate by comma)</label>
+        <input type="text" id="additionalRequests" placeholder="Input"> </input>
+
+        <br>
+        <br>
+        
+        <p class="font3">Do you require CART services?</p>
+        <label class="switch0">
+            <input type="checkbox" checked>
+            <span class="slider round">
+                <span class="label">Yes</span>
+                <span class="label">No</span>
+            </span>
+        </label>
+        <br>
+        <br>
+        <p class="font3">Will you need a quote prior to confirmation?</p>
+        <label class="switch0">
+            <input type="checkbox" checked>
+            <span class="slider round">
+                <span class="label">Yes</span>
+                <span class="label">No</span>
+            </span>
+        </label>
+        <br>
+        <br>
+        <label for="additionalRequests" class="input">Please list any additional requests or considerations you might
+            have at this time</label>
+        <input type="text" id="additionalRequests" placeholder="Input"> </input>
+    </form>
+</div>
+</div>
+<script>
+
+</script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
